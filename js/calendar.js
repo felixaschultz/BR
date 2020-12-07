@@ -2,6 +2,18 @@ let c_container = document.querySelector(".calendar");
 let days = 25;
 let closebtn = document.querySelector(".close");
 let cta = document.querySelector(".cta");
+const masc = document.querySelector(".navigation__mascot");
+const navigation = document.querySelector(".navigation");
+let navize = document.querySelector(".navigation__content").clientWidth;
+masc.addEventListener("click", function(){
+    if(navigation.style.left == "" || navigation.style.left == null || navigation.style.left == "-" + navize + "px"){
+        navigation.style.left = "0";
+    }else{
+        navigation.style.left = "-"+navize+"px"; 
+    }
+});
+
+
 
 for(let i = 1; i<days; i++){
     let door = document.createElement("article");
