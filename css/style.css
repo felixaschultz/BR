@@ -101,7 +101,7 @@
     height: 200px;
     background: var(--blue);
     position: absolute;
-    right: -30px;
+    right: -40px;
     top: 50%;
     transform: translate(0%, -50%);
     cursor: pointer;
