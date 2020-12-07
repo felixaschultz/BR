@@ -1,3 +1,7 @@
+:root{
+    --blue: #2A6CB5;
+    --red: #C20016;
+}
 /* Container og Content Style på desktop */
 .container{
     width: 100%;
@@ -11,10 +15,12 @@
 .content{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
 }
 
 /* Jule kalender */
 .calendar{
+    width: 100%;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     gap: 7px;
@@ -41,7 +47,7 @@
 
 .door__front{
     font-family: Bumpo, Helvetica, sans-serif;
-    color: #C20016;
+    color: var(--red);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -57,7 +63,7 @@
     position: absolute;
 }
 .door__back{
-    background: #2A6CB5;
+    background: var(--blue);
     transform: rotateY(180deg);
     width: 100%;
     height: 100%;
@@ -76,26 +82,32 @@
 
 /* Indhold */
 .txt{
-    width: 90%;
+    width: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.headline{
+    font-size: 3em;
+    font-family: Bumpo, Helvetica, sans-serif;
 }
 
 /* Santa */
 .santa{
     position: absolute;
-    width: 19%;
-    left: 46%;
-    top: 28%;
+    width: 17%;
+    left: 44%;
+    top: 30%;
     transform: translate(-40%);
 }
 
 /* CTA Button */
 .cta{
-    background: #2A6CB5;
+    background: var(--blue);
     width: auto;
     text-decoration: none;
     color: #fff;
@@ -115,7 +127,7 @@
 }
 
 .copy{
-    color: #C20016;
+    color: var(--red);
     height: 100%;
     display: flex;
     justify-content: flex-end;
@@ -123,7 +135,7 @@
 }
 
 .byline{
-    color: #C20016;
+    color: var(--red);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -142,4 +154,37 @@
 
 .trinity_logo{
     width: 20%;
+}
+
+/* Overlay */
+.overlay{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.61);
+    z-index: 200;
+    top: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: all .5s ease-in-out;
+}
+
+.overlay__inner{
+    width: 1019px;
+    height: 521px;
+    background: #fff;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+
+.close{
+    display: inline-block;
+    float: right;
+    background: var(--blue);
+    color: #fff;
+    padding: 10px;
+    text-decoration: none;
+    width: auto;
 }

@@ -1,5 +1,7 @@
 let c_container = document.querySelector(".calendar");
 let days = 25;
+let closebtn = document.querySelector(".close");
+let cta = document.querySelector(".cta");
 
 for(let i = 1; i<days; i++){
     let door = document.createElement("article");
@@ -31,3 +33,15 @@ for(var i = 0; i<doors.length; i++){
         this.style.transform = "";
     });
 }
+
+closebtn.addEventListener("click", function(e){
+    e.preventDefault();
+    document.querySelector(".overlay").style.opacity = "0";
+    document.querySelector(".overlay").style.visibility = "hidden";
+});
+
+cta.addEventListener("click", function(e){
+    e.preventDefault();
+    document.querySelector(".overlay").style.opacity = "1";
+    document.querySelector(".overlay").style.visibility = "visible";
+});
