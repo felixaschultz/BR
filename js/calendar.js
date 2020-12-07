@@ -1,7 +1,7 @@
 let c_container = document.querySelector(".calendar");
 let days = 25;
 let closebtn = document.querySelector(".close");
-let cta = document.querySelector(".cta");
+let cta = document.querySelectorAll(".cta");
 const masc = document.querySelector(".navigation__mascot");
 const navigation = document.querySelector(".navigation");
 let navize = document.querySelector(".navigation__content").clientWidth;
@@ -52,8 +52,10 @@ closebtn.addEventListener("click", function(e){
     document.querySelector(".overlay").style.visibility = "hidden";
 });
 
-cta.addEventListener("click", function(e){
-    e.preventDefault();
-    document.querySelector(".overlay").style.opacity = "1";
-    document.querySelector(".overlay").style.visibility = "visible";
-});
+for(var i = 0; i<cta.length; i++){
+    cta[i].addEventListener("click", function(e){
+        e.preventDefault();
+        document.querySelector(".overlay").style.opacity = "1";
+        document.querySelector(".overlay").style.visibility = "visible";
+    });
+}

@@ -103,6 +103,7 @@
     position: absolute;
     right: -30px;
     top: 50%;
+    transform: translate(0%, -50%);
     cursor: pointer;
 }
 
