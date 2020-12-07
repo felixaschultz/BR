@@ -1,0 +1,76 @@
+/* Container og Content Style på desktop */
+.container{
+    width: 100%;
+    height: 100vh;
+    background: url("/images/Julekalender elementer/bg.jpg");
+    background-size: 100%;
+    background-position: 0px -45px;
+    background-repeat: no-repeat;
+}
+
+.content{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+/* Jule kalender */
+.calendar{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 7px;
+    padding: 24px;
+    transform: scale(.75);
+}
+
+.door{
+    width: 100%;
+    height: 104px;
+    background: #fff;
+    position: relative;
+}
+
+.door-front{
+    font-family: Bumpo, Helvetica, sans-serif;
+    color: #C20016;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    font-size: 55px;
+}
+
+.door-back{
+
+}
+
+/* Header */
+.header{
+    position: fixed;
+    top: 0;
+    padding: 15px;
+}
+
+.logo{
+    width: 27%;
+}
+
+/* Indhold */
+.txt{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+/* Santa */
+.santa{
+    position: absolute;
+    width: 19%;
+    left: 40%;
+    top: 28%;
+    transform: translate(-40%);
+}

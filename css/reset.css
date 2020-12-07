@@ -1,0 +1,23 @@
+@font-face{
+	font-family: Bumpo;
+	src: url("../fonts/Bumpo.ttf");	
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+    color: #fff;
+    font-family: Bumpo, Helvetica, sans-serif;
+}
+
+img{
+    max-width: 100%;
+}
+
+section h1{
+    font-size: 2em;
+}
