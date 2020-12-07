@@ -27,9 +27,19 @@
     height: 104px;
     background: #fff;
     position: relative;
+    perspective: 1000px;
+    cursor: pointer;
 }
 
-.door-front{
+.door__face{
+    width: 100%;
+    height: 100%;
+    transition: all .5s ease-in-out;
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+.door__front{
     font-family: Bumpo, Helvetica, sans-serif;
     color: #C20016;
     display: flex;
@@ -41,8 +51,16 @@
     font-size: 55px;
 }
 
-.door-back{
-
+.door__front, .door__back{
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+    position: absolute;
+}
+.door__back{
+    background: #2A6CB5;
+    transform: rotateY(180deg);
+    width: 100%;
+    height: 100%;
 }
 
 /* Header */
@@ -73,6 +91,17 @@
     left: 46%;
     top: 28%;
     transform: translate(-40%);
+}
+
+/* CTA Button */
+.cta{
+    background: #2A6CB5;
+    width: auto;
+    text-decoration: none;
+    color: #fff;
+    font-family: Bumpo, Helvetica, sans-serif;
+    padding: 15px 30px;
+    border-radius: 50px;
 }
 
 /* Footer */
