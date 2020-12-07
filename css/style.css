@@ -113,6 +113,7 @@
 .navigation__content p{
     color: rgb(102, 102, 102);
     font-family: Arial, Helvetica, sans-serif;
+    margin: 30px 0px;
 }
 
 .navigation__content{
@@ -159,6 +160,7 @@
     font-family: Bumpo, Helvetica, sans-serif;
     padding: 15px 30px;
     border-radius: 50px;
+    display: inline-block;
 }
 
 /* Footer */
