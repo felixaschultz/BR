@@ -70,7 +70,18 @@
 .santa{
     position: absolute;
     width: 19%;
-    left: 40%;
+    left: 46%;
     top: 28%;
     transform: translate(-40%);
+}
+
+/* Footer */
+.footer{
+    position: fixed;
+    bottom: 0px;
+    padding: 30px;
+}
+
+.copy{
+    color: #C20016;
 }
