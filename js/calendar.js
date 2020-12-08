@@ -8,8 +8,10 @@ let navize = document.querySelector(".navigation__content").clientWidth;
 masc.addEventListener("click", function(){
     if(navigation.style.left == "" || navigation.style.left == null || navigation.style.left == "-" + navize + "px"){
         navigation.style.left = "0";
+        document.body.style.overflow = "hidden";
     }else{
         navigation.style.left = "-"+navize+"px"; 
+        document.body.style.overflow = "auto";
     }
 });
 

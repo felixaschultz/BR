@@ -129,6 +129,11 @@
     padding: 40px;
     margin-top: 90px;
     padding-bottom: 140px;
+    text-align: center;
+}
+
+.br_mand{
+    margin: 0px 0px 30px;
 }
 
 .bow{
