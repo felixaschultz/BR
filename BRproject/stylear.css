@@ -1,0 +1,65 @@
+ /* Layout AR-Screen */
+
+
+ body {
+     background-image: url(img/ar-bg.png);
+     background-size: cover;
+     background-repeat: no-repeat;
+     width: 100%;
+     height: 100vh;
+ }
+
+ header {
+     display: grid;
+     grid-template-columns: 50px 2fr 1fr;
+     align-items: center;
+     justify-content: center;
+     margin-top: 30px;
+ }
+
+ .triangle {
+        width: 0;
+        height: 0;
+        border-top: 15px solid transparent;
+        border-right: 25px solid rgb(194,0,22);
+        border-bottom: 15px solid transparent;
+ }
+
+h3 {
+    background-color: white;
+    border-radius: 10px;
+    font-family: bumpo;
+    text-align: center;
+    color: rgb(194,0,22);
+    font-size: 25px;
+    margin: 0 30px;
+    padding: 5px;
+}
+
+.logo {
+    width: 60px;
+ }
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    left: 0;
+}
+
+ .footer_circle {
+    display: flex;
+    flex-direction: column;
+    border: 7px solid rgb(194,0,22);
+    border-radius: 50%;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, .75);
+    width: 70px;
+    height: 70px;
+    margin-bottom: 30px;
+
+
+ }
