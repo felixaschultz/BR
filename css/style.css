@@ -1,5 +1,6 @@
 :root{
     --blue: #2A6CB5;
+    --lightblue: #419aff;
     --red: #C20016;
     --yellow: #FFFF00;
 }
@@ -64,10 +65,18 @@
     position: absolute;
 }
 .door__back{
-    background: var(--blue);
+    background: var(--lightblue);
     transform: rotateY(180deg);
     width: 100%;
     height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.day-img{
+    max-width: 100%;
+    width: 60%;
 }
 
 /* Header */
@@ -107,6 +116,8 @@
     top: 50%;
     transform: translate(0%, -50%);
     cursor: pointer;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
 }
 
 .navigation__mascot h3{
@@ -247,7 +258,7 @@
 }
 
 .close{
-    display: inline-block;
+    display: block;
     float: right;
     background: var(--blue);
     color: #fff;

@@ -23,16 +23,48 @@ for(let i = 1; i<days; i++){
     let door_front = document.createElement("section");
     let door_back = document.createElement("section");
 
+    let img = new Image();
+    let ig = new Array(
+        "../images/imgelementer/ball.png",
+        "../images/imgelementer/bell.png",
+        "../images/imgelementer/blouse.png",
+        "../images/imgelementer/candle.png",
+        "../images/imgelementer/candy.png",
+        "../images/imgelementer/cupcakes.png",
+        "../images/imgelementer/decoration.png",
+        "../images/imgelementer/gingerhouse.png",
+        "../images/imgelementer/hat.png",
+        "../images/imgelementer/helper1.png",
+        "../images/imgelementer/helper2.png",
+        "../images/imgelementer/helper3.png",
+        "../images/imgelementer/light.png",
+        "../images/imgelementer/olaf.png",
+        "../images/imgelementer/presents.png",
+        "../images/imgelementer/reindeer1.png",
+        "../images/imgelementer/reindeer2.png",
+        "../images/imgelementer/sack.png",
+        "../images/imgelementer/snowball.png",
+        "../images/imgelementer/snowman.png",
+        "../images/imgelementer/sok.png",
+        "../images/imgelementer/star.png",
+        "../images/imgelementer/tree.png",
+        "../images/imgelementer/trousers.png"
+    );
+    
+    img.setAttribute("class", "day-img")
+
+    img.src = ig[i-1];
+    door_back.appendChild(img);
+
     door.setAttribute("class", "door");
     door_face.setAttribute("class", "door__face");
     door_back.setAttribute("class", "door__back");
     door_front.setAttribute("class", "door__front");
-    
+
     door_front.innerHTML = i;
     door_face.appendChild(door_front);
     door_face.appendChild(door_back);
     door.appendChild(door_face.cloneNode(true));
-
     c_container.appendChild(door);
 }
 let doors = document.querySelectorAll(".door__face");
