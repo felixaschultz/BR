@@ -1,8 +1,23 @@
 @media screen and (min-width: 374px) and (max-width: 900px){
+    body{
+        overflow: auto;
+    }
     .container{
         background-size: cover;
     }
     .content{
         grid-template-columns: 1fr;
+    }
+
+    .calendar{
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .santa{
+        display: none;
+    }
+
+    .footer{
+        position: relative;
     }
 }

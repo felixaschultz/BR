@@ -121,13 +121,24 @@
 
 .navigation__content{
     width: 300px;
-    height: calc(100vh - 100px);
+    height: calc(100vh - 90px);
     position: relative;
     top: 0;
     color: var(--blue);
     overflow: scroll;
     padding: 40px;
-    margin-top: 100px;
+    margin-top: 90px;
+    padding-bottom: 140px;
+}
+
+.bow{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    border-top-left-radius: 100%;
+    border-top-right-radius: 100%;
+    background: var(--blue);
 }
 /* Indhold */
 .txt{

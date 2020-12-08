@@ -12,6 +12,7 @@ body{
     padding: 0px;
     color: #fff;
     font-family: Bumpo, Helvetica, sans-serif;
+    overflow: hidden;
 }
 
 img{
