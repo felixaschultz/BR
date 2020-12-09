@@ -1,0 +1,98 @@
+body{
+    display: grid;
+    justify-items: center;
+}
+
+.Bg-1{
+    background-color: #C20016;
+}
+
+.Bg-2{
+    background-color: #f5f5f5;
+}
+
+@font-face{
+    font-family: Bumpo;
+    src: url("Bumpo.tff");
+
+}
+header{
+    color: #FFFF01;
+    display: grid;
+    grid-template-columns: 50px 2fr 1fr;
+    align-items: center;
+}
+.navbutton{
+    width: 0;
+    height: 0;
+    border-top: 15px solid transparent;
+    border-right: 25px solid #FFFF01;
+    border-bottom: 15px solid transparent;
+}
+h2{
+    margin: 0px;
+    font-family: Bumpo;
+}
+h1{
+    color: white;
+    font-size: 50px;
+    font-family: Bumpo;
+}
+
+
+.date{
+    border-radius:25px;
+    background: white;
+    padding: 20px;
+    width: 200px;
+    height: 150px;
+    color:#C20016;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+ 
+    
+   
+}
+.month{
+    font-size: 30px;
+}
+.information{
+    border-radius: 25px;
+    background-color:white;
+    text-align: center;
+    color: #C20016;
+    padding: 20px 10px;
+    font-size: 20px;
+    gap: 10px;
+    border-radius: 10px;
+    margin: 20px 10px;
+    font-family: Bumpo;
+}
+.grid-container{ 
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 4px;
+    padding: 10px;
+   
+}
+.grid-container > p {
+    background-color:white;
+    text-align: center;
+    color: #C20016;
+    padding: 20px 10px;
+    font-size: 20px;
+    border-radius: 10px;
+    font-family: Bumpo;
+    width: 50px;
+    height: 30px;
+    justify-content: center;
+    margin: 10px;
+  }
+  .item{
+      display: flex;
+      flex-direction: column;
+  }
+  
