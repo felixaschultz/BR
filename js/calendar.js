@@ -4,7 +4,7 @@ let closebtn = document.querySelector(".close");
 let cta = document.querySelectorAll(".cta");
 const masc = document.querySelector(".navigation__mascot");
 const navigation = document.querySelector(".navigation");
-let navize = document.querySelector(".navigation__content").clientWidth;
+let navize = document.querySelector(".navigation__content").clientWidth + 7;
 masc.addEventListener("click", function(){
     if(navigation.style.left == "" || navigation.style.left == null || navigation.style.left == "-" + navize + "px"){
         navigation.style.left = "0";
