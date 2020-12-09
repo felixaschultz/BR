@@ -240,14 +240,23 @@
 }
 
 .overlay__inner{
-    width: 1019px;
+    width: auto;
     height: 521px;
-    background: #fff;
+    background: rgb(206, 206, 206);
     top: 50%;
     left: 50%;
     position: absolute;
     transform: translate(-50%, -50%);
     padding: 15px;
+}
+
+.overlay__inner-content p{
+    color: rgba(0, 0, 0, 0.61);
+}
+
+.overlay__inner-content--grid{
+    display: grid;
+    grid-template-columns: 50% 1fr;
 }
 
 .close{
