@@ -4,7 +4,7 @@ let closebtn = document.querySelector(".close");
 let cta = document.querySelectorAll(".cta");
 const masc = document.querySelector(".navigation__mascot");
 const navigation = document.querySelector(".navigation");
-let navize = document.querySelector(".navigation__content").clientWidth;
+let navize = document.querySelector(".navigation__content").clientWidth + 7;
 masc.addEventListener("click", function(){
     if(navigation.style.left == "" || navigation.style.left == null || navigation.style.left == "-" + navize + "px"){
         navigation.style.left = "0";
@@ -25,41 +25,117 @@ for(let i = 1; i<days; i++){
 
     let img = new Image();
     let ig = new Array(
-        "../images/imgelementer/ball.png",
-        "../images/imgelementer/bell.png",
-        "../images/imgelementer/blouse.png",
-        "../images/imgelementer/candle.png",
-        "../images/imgelementer/candy.png",
-        "../images/imgelementer/cupcakes.png",
-        "../images/imgelementer/decoration.png",
-        "../images/imgelementer/gingerhouse.png",
-        "../images/imgelementer/hat.png",
-        "../images/imgelementer/helper1.png",
-        "../images/imgelementer/helper2.png",
-        "../images/imgelementer/helper3.png",
-        "../images/imgelementer/light.png",
-        "../images/imgelementer/olaf.png",
-        "../images/imgelementer/presents.png",
-        "../images/imgelementer/reindeer1.png",
-        "../images/imgelementer/reindeer2.png",
-        "../images/imgelementer/sack.png",
-        "../images/imgelementer/snowball.png",
-        "../images/imgelementer/snowman.png",
-        "../images/imgelementer/sok.png",
-        "../images/imgelementer/star.png",
-        "../images/imgelementer/tree.png",
-        "../images/imgelementer/trousers.png"
+        [
+            "../images/imgelementer/ball.png",
+            "Hej"
+        ],
+        [
+            "../images/imgelementer/bell.png",
+            "Moin"
+        ],
+        [
+            "../images/imgelementer/blouse.png",
+            "Hvordan"
+        ],
+        [
+            "../images/imgelementer/candle.png",
+            "Test"
+        ],
+        [
+            "../images/imgelementer/candy.png",
+            ""
+        ],
+        [
+            "../images/imgelementer/cupcakes.png",
+            ""
+        ],
+        [
+            "../images/imgelementer/decoration.png",
+            ""
+        ],
+        [
+            "../images/imgelementer/gingerhouse.png",
+            ""
+        ],
+        [
+            "../images/imgelementer/hat.png",
+            ""
+        ],
+        [
+            "../images/imgelementer/helper1.png",
+            ""
+        ],
+        [
+            "../images/imgelementer/helper2.png",
+            ""
+        ],
+        [
+            "../images/imgelementer/helper3.png",
+            ""
+        ],
+        [
+            "../images/imgelementer/light.png",
+            ""
+        ],
+        [
+            "../images/imgelementer/olaf.png",
+            ""
+        ],
+        [
+            "../images/imgelementer/presents.png",
+            ""
+        ],
+        [
+            "../images/imgelementer/reindeer1.png",
+            ""
+        ],
+        [
+            "../images/imgelementer/reindeer2.png",
+            ""
+        ],
+        [
+            "../images/imgelementer/sack.png",
+            ""
+        ],
+        [
+            "../images/imgelementer/snowball.png",
+            ""
+        ],
+        [
+            "../images/imgelementer/snowman.png",
+            ""
+        ],
+        [
+            "../images/imgelementer/sok.png",
+            ""
+        ],
+        [
+            "../images/imgelementer/star.png",
+            ""
+        ],
+        [
+            "../images/imgelementer/tree.png",
+            ""
+        ],
+        [
+            "../images/imgelementer/trousers.png",
+            ""
+        ]
     );
     
     img.setAttribute("class", "day-img")
 
-    img.src = ig[i-1];
+    img.src = ig[i-1][0];
     door_back.appendChild(img);
 
     door.setAttribute("class", "door");
     door_face.setAttribute("class", "door__face");
     door_back.setAttribute("class", "door__back");
     door_front.setAttribute("class", "door__front");
+    
+    /* ig[i-1] */
+
+    door_back.setAttribute("data-text", ig[i-1][1]);
 
     door_front.innerHTML = i;
     door_face.appendChild(door_front);
@@ -71,13 +147,39 @@ let doors = document.querySelectorAll(".door__face");
 let front = document.querySelectorAll(".door__front");
 
 for(var i = 0; i<doors.length; i++){
-    doors[i].addEventListener("mouseover", function(){
-        this.style.transform = "rotateY(180deg)";
-    });
 
-    doors[i].addEventListener("mouseout", function(){
-        this.style.transform = "";
-    });
+    var today = new Date();
+    var dd = String(today.getDate());
+    var mm = String(today.getMonth() + 1); //January is 0!
+    var yyyy = today.getFullYear();
+
+    today = mm + '/' + dd + '/' + yyyy;
+    let t = doors[i].querySelector(".door__front").innerText;
+    if(t == parseInt(dd)){
+        doors[i].addEventListener("click", function(e){
+            e.preventDefault();
+            this.style.transform = "rotateY(180deg)";
+            document.querySelector(".overlay__inner-content").classList.add("overlay__inner-content--grid");
+            document.querySelector(".overlay__inner-content").innerHTML = "<img src='" + this.querySelector(".door__back img").src+ "'>";
+            document.querySelector(".overlay__inner-content").innerHTML += "<p>"+this.querySelector(".door__back").getAttribute("data-text") +"</p>";
+            document.querySelector(".overlay").style.opacity = "1";
+            document.querySelector(".overlay").style.visibility = "visible";
+
+        });
+    
+        /* doors[i].addEventListener("click", function(){
+            if(t < parseInt(dd)){
+                this.style.transform = "rotateY(180deg)";
+            }else{
+                this.style.transform = "";
+            }
+            
+        }); */
+    }
+
+    if(t < parseInt(dd)){
+        doors[i].style.transform = "rotateY(180deg)";
+    }
 }
 
 closebtn.addEventListener("click", function(e){
@@ -89,6 +191,8 @@ closebtn.addEventListener("click", function(e){
 for(var i = 0; i<cta.length; i++){
     cta[i].addEventListener("click", function(e){
         e.preventDefault();
+        document.querySelector(".overlay__inner-content").classList.remove("overlay__inner-content--grid");
+        document.querySelector(".overlay__inner-content").innerHTML = "";
         document.querySelector(".overlay").style.opacity = "1";
         document.querySelector(".overlay").style.visibility = "visible";
     });
@@ -98,14 +202,9 @@ for(var i = 0; i<cta.length; i++){
 function shuffle(array) {
     var currentIndex = array.length, temporaryValue, randomIndex;
 
-    // While there remain elements to shuffle...
     while (0 !== currentIndex) {
-
-        // Pick a remaining element...
         randomIndex = Math.floor(Math.random() * currentIndex);
         currentIndex -= 1;
-
-        // And swap it with the current element.
         temporaryValue = array[currentIndex];
         array[currentIndex] = array[randomIndex];
         array[randomIndex] = temporaryValue;
@@ -119,6 +218,5 @@ let d = Array.prototype.slice.call(document.querySelectorAll(".door"));
 shuffle(d);
 
 for(var j=0; j<d.length; j++){
-    console.log(d[j]);
     c_container.appendChild(d[j]);
 }

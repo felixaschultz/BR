@@ -1,0 +1,181 @@
+/* Baggrund, font style og body*/
+body{
+    display: grid;
+    justify-items: center;
+    margin: 0px;
+}
+
+.Bg-1{
+    background-color: #C20016;
+}
+
+.Bg-2{
+    background-color:white;
+    justify-content: center;
+
+}
+.grid-container1{ 
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 4px;
+    padding: 10px;
+   
+}
+
+
+.marker{
+    background: url("logoBR-grey.png");
+    background-size: cover;
+    border-radius: 100%;
+    width: 90px;
+    height: 90px;
+    margin: 10px;
+    padding: 20px 20px;
+}
+
+.collected{
+    background: url("logoBR.png");
+    background-size: contain;
+}
+
+@font-face{
+    font-family: Bumpo;
+    src: url("Bumpo.tff");
+
+}
+/*Header og logo*/
+
+header{
+    color: #FFFF01;
+    display: grid;
+    grid-template-columns: 50px 2fr 1fr;
+    align-items: center;
+    width: 100%;
+    margin-top: 25px;
+}
+.jul-1{
+    color:#2A6CB5 ;
+    grid-column: 2/ span 4;
+    text-align: center;
+    margin-right: 45px;
+}
+.navbutton{
+    width: 0;
+    height: 0;
+    border-top: 15px solid transparent;
+    border-right: 25px solid #FFFF01;
+    border-bottom: 15px solid transparent;
+    margin-left: 10px;
+}
+.logo{
+    margin-left: 2px;
+}
+.jul{
+    margin-right: 30px;
+}
+/*Tekst og datoer til julekalender */
+h2{
+    margin: 0px;
+    font-family: Bumpo;
+}
+h1{
+    color: white;
+    font-size: 50px;
+    font-family: Bumpo;
+}
+.samlebog{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section{
+    font-family: Bumpo;
+    color:#C20016 ;
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+}
+.date{
+    border-radius:25px;
+    background: white;
+    padding: 20px;
+    width: 200px;
+    height: 150px;
+    color:#C20016;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.month{
+    font-size: 30px;
+}
+.information{
+    border-radius: 25px;
+    background-color:white;
+    text-align: center;
+    color: black;
+    padding: 20px 10px;
+    font-size: 15px;
+    gap: 10px;
+    border-radius: 10px;
+    margin: 20px 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h4{
+    color: black;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px 20px;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h3{
+    font-size: 25px;
+}
+/*Footer,AR box og media screen */
+.text-ar{
+    font-size: 10px;
+}
+.grid-container{ 
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 4px;
+    padding: 10px;
+   
+}
+.grid-container > p {
+    background-color:white;
+    text-align: center;
+    color: #C20016;
+    padding: 20px 10px;
+    font-size: 20px;
+    border-radius: 10px;
+    font-family: Bumpo;
+    width: 50px;
+    height: 30px;
+    justify-content: center;
+    margin: 10px;
+  }
+  .item{
+      display: flex;
+      flex-direction: column;
+  }
+  .ar-button{
+      border-radius: 25px;
+      background-color:#FFFF01;
+      text-align: center;
+      color: #2A6CB5;
+      padding: 10px 10px;
+      width: 300px;
+      height: 80px;
+      font-size: 20px;
+      gap: 10px;
+      font-family: Bumpo;
+     justify-content: center;
+  }
+  @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    img { max-width: 100%; }
+}

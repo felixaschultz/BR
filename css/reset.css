@@ -1,3 +1,10 @@
+:root{
+    --blue: #2A6CB5;
+    --lightblue: #419aff;
+    --red: #C20016;
+    --yellow: #FFFF00;
+}
+
 @font-face{
 	font-family: Bumpo;
 	src: url("../fonts/Bumpo.ttf");	
@@ -21,4 +28,30 @@ img{
 
 section h1{
     font-size: 2em;
+}
+
+::-webkit-scrollbar{
+    width: 7px;
+}
+ 
+::-webkit-scrollbar-thumb{
+    background-color: var(--blue);
+    border-radius: 30px;
+}
+
+::-webkit-scrollbar-track{
+  background-color: transparent;
+}
+
+::-moz-scrollbar{
+    width: 7px;
+}
+
+::-moz-scrollbar-track{
+  background-color: transparent;
+}
+
+::-moz-scrollbar-thumb{
+  background-color: var(--blue);
+  border-radius: 30px;
 }
