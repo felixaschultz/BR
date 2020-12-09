@@ -2,7 +2,7 @@
 
 
  body {
-     background-image: url(img/ar-bg.png);
+     background-image: url("img/ar-bg.png");
      background-size: cover;
      background-repeat: no-repeat;
      width: 100%;
@@ -62,4 +62,12 @@ footer {
     margin-bottom: 30px;
 
 
+ }
+
+ .ar{
+     width: 100%;
+     height: 100vh;
+     position: absolute;
+     z-index: -1;
+     top: 0;
  }
