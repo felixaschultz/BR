@@ -1,0 +1,49 @@
+/* Basic Layout app login */
+
+body {
+    margin: 0;
+    background-color: red;
+}
+
+main {
+
+    text-align: center;
+}
+
+.login_logo {
+    width: 80%;
+    margin-top: 20px;
+}
+
+.login_box {
+    display: flex;
+    flex-direction: column;
+
+    margin-top: 20px;
+    align-content: center;
+
+}
+
+input[type=text], input[type=adgangskode] {
+    width: 70%;
+    padding: 12px 20px;
+    margin: 8px 55px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 15px 15px 0px 0px;
+}
+
+.psw, a {
+    color: white;
+}
+
+button {
+    color: rgb(44, 44, 44);
+    padding: 14px 20px;
+    margin: 8px 55px;
+    border: none;
+    cursor: pointer;
+    width: 70%;
+    border-radius: 10px;
+    font-size: 18px;
+}
