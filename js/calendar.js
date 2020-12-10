@@ -2,7 +2,7 @@ let c_container = document.querySelector(".calendar");
 let days = 25;
 let closebtn = document.querySelector(".close");
 let cta = document.querySelectorAll(".cta");
-const masc = document.querySelector(".navigation__mascot");
+const masc = document.querySelector(".navigation__handle");
 const navigation = document.querySelector(".navigation");
 let navize = document.querySelector(".navigation__content").clientWidth + 7;
 masc.addEventListener("click", function(){
@@ -20,7 +20,7 @@ masc.addEventListener("click", function(){
 for(let i = 1; i<days; i++){
     let door = document.createElement("article");
     let door_face = document.createElement("section");
-    let door_front = document.createElement("section");
+    let door_front = document.createElement("p");
     let door_back = document.createElement("section");
 
     let img = new Image();
@@ -147,14 +147,14 @@ let doors = document.querySelectorAll(".door__face");
 let front = document.querySelectorAll(".door__front");
 
 for(var i = 0; i<doors.length; i++){
-
+    var door = document.querySelectorAll(".door");
     var today = new Date();
     var dd = String(today.getDate());
-    var mm = String(today.getMonth() + 1); //January is 0!
+    var mm = String(today.getMonth() + 1);
     var yyyy = today.getFullYear();
 
     today = mm + '/' + dd + '/' + yyyy;
-    let t = doors[i].querySelector(".door__front").innerText;
+    var t = doors[i].querySelector(".door__front").innerText;
     if(t == parseInt(dd)){
         doors[i].addEventListener("click", function(e){
             e.preventDefault();
@@ -175,6 +175,12 @@ for(var i = 0; i<doors.length; i++){
             }
             
         }); */
+
+        door[i].classList.add("door--modifier");
+
+        console.log(door);
+    }else{
+        door[i].classList.remove("door--modifier"); 
     }
 
     if(t < parseInt(dd)){
