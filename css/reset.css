@@ -1,3 +1,10 @@
+:root{
+    --blue: #2A6CB5;
+    --lightblue: #419aff;
+    --red: #C20016;
+    --yellow: #FFFF00;
+}
+
 @font-face{
 	font-family: Bumpo;
 	src: url("../fonts/Bumpo.ttf");	

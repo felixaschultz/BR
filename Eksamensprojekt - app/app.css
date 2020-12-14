@@ -62,7 +62,12 @@ body{
    border: none;
 }
 .secondary-btn{
+    background-color: var(--yellow);
+    color: var(--blue);
+}
+.secondary-btn-blue{
     background-color: var(--blue);
+
 }
 /*Header og logo*/
 
