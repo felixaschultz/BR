@@ -59,24 +59,6 @@ body {
     text-align: center;
 }
 
-.buttons {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    text-align: center;
-
-}
-
-.button_left {
-    background-color: rgb(42, 108, 181);
-    color: white;
-
-}
-
-.button_right {
-    color: rgb(42, 108, 181);
-
-}
-
 h1 {
     color: rgb(116,116,116);
     font-size: 30px;
@@ -89,32 +71,80 @@ h2 {
     font-size: 25px;
 }
 
-p {
-    padding: 7px;
-    border-radius: 30px;
-    font-size: 15px;
-    border: 2px solid rgb(42, 108, 181);
-    margin: 5px;
-
-}
-
-.grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    margin: 20px;
-    align-items: center;
-    justify-items: center;
-    grid-gap: 10px;
-
-}
-
-.toys {
-    width: 160px;
+.door_menu {
+    background-color: rgb(204, 6, 6);
     border-radius: 20px;
-    border: 3px solid rgb(116,116,116);
+    text-align: center;
+    padding: 30px;
+    margin: 20px 80px;
+
 }
 
+.door {
+    color: white;
+    font-size: 40px;
+}
+
+
+/* Layout AR info */
+
+.Bg-1{
+    background-color: rgb(204, 6, 6);
+}
+
+.header_ar {
+    color: #FFFF01;
+    display: grid;
+    grid-template-columns: 50px 2fr 1fr;
+    align-items: center;
+    width: 100%;
+    margin-top: 25px;
+
+}
+
+.logo {
+    width: 60px;
+}
+
+.navbutton{
+    width: 0;
+    height: 0;
+    border-top: 15px solid transparent;
+    border-right: 25px solid #FFFF01;
+    border-bottom: 15px solid transparent;
+    margin-left: 10px;
+}
+
+.jul{
+    margin-right: 30px;
+    color: #FFFF01;
+}
+
+.title {
+    color: white;
+    text-align: center;
+    font-size: 40px;
+}
+
+.picture {
+    background-color: white;
+    border-radius: 20px;
+    width: 70%;
+    padding: 20px;
+    display: block;
+    margin-left: 37px;
+}
+
+.button {
+    font-size: 30px;
+    background-color: #FFFF01;
+    color: rgb(55, 111, 196);
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+    margin: 30px 50px;
+
+}
 
 
 
