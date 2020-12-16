@@ -27,99 +27,99 @@ for(let i = 1; i<days; i++){
     let ig = new Array(
         [
             "../images/imgelementer/ball.png",
-            "Hej"
+            "I dag har nisserne gemt det her- bliver det mon nogensinde jul? Kom og leg med og se om du kan finde det nisserne har gemt for julemanden."
         ],
         [
             "../images/imgelementer/bell.png",
-            "Moin"
+            "I dag har nisserne gemt det her- bliver det mon nogensinde jul? Kom og leg med og se om du kan finde det nisserne har gemt for julemanden."
         ],
         [
             "../images/imgelementer/blouse.png",
-            "Hvordan"
+            "I dag har nisserne gemt det her- bliver det mon nogensinde jul? Kom og leg med og se om du kan finde det nisserne har gemt for julemanden."
         ],
         [
             "../images/imgelementer/candle.png",
-            "Test"
+            "I dag har nisserne gemt det her- bliver det mon nogensinde jul? Kom og leg med og se om du kan finde det nisserne har gemt for julemanden."
         ],
         [
             "../images/imgelementer/candy.png",
-            ""
+            "I dag har nisserne gemt det her- bliver det mon nogensinde jul? Kom og leg med og se om du kan finde det nisserne har gemt for julemanden."
         ],
         [
             "../images/imgelementer/cupcakes.png",
-            ""
+            "I dag har nisserne gemt det her- bliver det mon nogensinde jul? Kom og leg med og se om du kan finde det nisserne har gemt for julemanden."
         ],
         [
             "../images/imgelementer/decoration.png",
-            ""
+            "I dag har nisserne gemt det her- bliver det mon nogensinde jul? Kom og leg med og se om du kan finde det nisserne har gemt for julemanden."
         ],
         [
             "../images/imgelementer/gingerhouse.png",
-            ""
+            "I dag har nisserne gemt det her- bliver det mon nogensinde jul? Kom og leg med og se om du kan finde det nisserne har gemt for julemanden."
         ],
         [
             "../images/imgelementer/hat.png",
-            ""
+            "I dag har nisserne gemt det her- bliver det mon nogensinde jul? Kom og leg med og se om du kan finde det nisserne har gemt for julemanden."
         ],
         [
             "../images/imgelementer/helper1.png",
-            ""
+            "I dag har nisserne gemt det her- bliver det mon nogensinde jul? Kom og leg med og se om du kan finde det nisserne har gemt for julemanden."
         ],
         [
             "../images/imgelementer/helper2.png",
-            ""
+            "I dag har nisserne gemt det her- bliver det mon nogensinde jul? Kom og leg med og se om du kan finde det nisserne har gemt for julemanden."
         ],
         [
             "../images/imgelementer/helper3.png",
-            ""
+            "I dag har nisserne gemt det her- bliver det mon nogensinde jul? Kom og leg med og se om du kan finde det nisserne har gemt for julemanden."
         ],
         [
             "../images/imgelementer/light.png",
-            ""
+            "I dag har nisserne gemt det her- bliver det mon nogensinde jul? Kom og leg med og se om du kan finde det nisserne har gemt for julemanden."
         ],
         [
             "../images/imgelementer/olaf.png",
-            ""
+            "I dag har nisserne gemt det her- bliver det mon nogensinde jul? Kom og leg med og se om du kan finde det nisserne har gemt for julemanden."
         ],
         [
             "../images/imgelementer/presents.png",
-            ""
+            "I dag har nisserne gemt det her- bliver det mon nogensinde jul? Kom og leg med og se om du kan finde det nisserne har gemt for julemanden."
         ],
         [
             "../images/imgelementer/reindeer1.png",
-            ""
+            "I dag har nisserne gemt det her- bliver det mon nogensinde jul? Kom og leg med og se om du kan finde det nisserne har gemt for julemanden."
         ],
         [
             "../images/imgelementer/reindeer2.png",
-            ""
+            "I dag har nisserne gemt det her- bliver det mon nogensinde jul? Kom og leg med og se om du kan finde det nisserne har gemt for julemanden."
         ],
         [
             "../images/imgelementer/sack.png",
-            ""
+            "I dag har nisserne gemt det her- bliver det mon nogensinde jul? Kom og leg med og se om du kan finde det nisserne har gemt for julemanden."
         ],
         [
             "../images/imgelementer/snowball.png",
-            ""
+            "I dag har nisserne gemt det her- bliver det mon nogensinde jul? Kom og leg med og se om du kan finde det nisserne har gemt for julemanden."
         ],
         [
             "../images/imgelementer/snowman.png",
-            ""
+            "I dag har nisserne gemt det her- bliver det mon nogensinde jul? Kom og leg med og se om du kan finde det nisserne har gemt for julemanden."
         ],
         [
             "../images/imgelementer/sok.png",
-            ""
+            "I dag har nisserne gemt det her- bliver det mon nogensinde jul? Kom og leg med og se om du kan finde det nisserne har gemt for julemanden."
         ],
         [
             "../images/imgelementer/star.png",
-            ""
+            "I dag har nisserne gemt det her- bliver det mon nogensinde jul? Kom og leg med og se om du kan finde det nisserne har gemt for julemanden."
         ],
         [
             "../images/imgelementer/tree.png",
-            ""
+            "I dag har nisserne gemt det her- bliver det mon nogensinde jul? Kom og leg med og se om du kan finde det nisserne har gemt for julemanden."
         ],
         [
             "../images/imgelementer/trousers.png",
-            ""
+            "I dag har nisserne gemt det her- bliver det mon nogensinde jul? Kom og leg med og se om du kan finde det nisserne har gemt for julemanden."
         ]
     );
     
