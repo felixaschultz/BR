@@ -96,11 +96,15 @@ header{
     border-bottom: 15px solid transparent;
     margin-left: 10px;
 }
+
 .logo{
     margin-left: 2px;
+    width: 60px;
 }
+
 .jul{
     margin-right: 30px;
+    margin-left: 30px;
 }
 /*Tekst, billeder og datoer til julekalender */
 h2{
