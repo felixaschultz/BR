@@ -18,11 +18,12 @@
  }
 
  .triangle {
-        width: 0;
-        height: 0;
-        border-top: 15px solid transparent;
-        border-right: 25px solid rgb(194,0,22);
-        border-bottom: 15px solid transparent;
+    width: 0;
+    height: 0;
+    border-top: 15px solid transparent;
+    border-right: 25px solid rgb(194,0,22);
+    border-bottom: 15px solid transparent;
+    margin-left: 10px;
  }
 
 h3 {

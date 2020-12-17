@@ -194,7 +194,7 @@ closebtn.addEventListener("click", function(e){
     document.querySelector(".overlay").style.visibility = "hidden";
 });
 
-for(var i = 0; i<cta.length; i++){
+/* for(var i = 0; i<cta.length; i++){
     cta[i].addEventListener("click", function(e){
         e.preventDefault();
         document.querySelector(".overlay__inner-content").classList.remove("overlay__inner-content--grid");
@@ -202,7 +202,7 @@ for(var i = 0; i<cta.length; i++){
         document.querySelector(".overlay").style.opacity = "1";
         document.querySelector(".overlay").style.visibility = "visible";
     });
-}
+} */
 
 //Functionen har jeg fra: https://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array
 function shuffle(array) {

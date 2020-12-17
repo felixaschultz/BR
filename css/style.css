@@ -265,7 +265,7 @@
 
 .overlay__inner{
     width: auto;
-    height: 521px;
+    height: auto;
     background: rgb(206, 206, 206);
     top: 50%;
     left: 50%;
