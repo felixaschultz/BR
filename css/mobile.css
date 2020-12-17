@@ -5,8 +5,9 @@
     .container{
         background-size: cover;
     }
+
     .content{
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr !important;
     }
 
     .calendar{

@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link rel="stylesheet" href="stylelogin.css">
     <link rel="stylesheet" href="../css/reset.css">
@@ -12,28 +12,27 @@
     <link rel="icon" href="https://www.br.dk/favicon.ico">
 </head>
 <body>
-    <main>
-
-    </section>
+    <header class="logo_container">
         <img class="login_logo" src="img/logo-og.png" alt="BR Logo">
-    <section>
+    </header>
+    <main>
+        <section class="login_box" >
+            <label for="uname">Mobilnummer</label>
+            <input id="uname" class="inputfields" type="text" placeholder="Mobilnummer" name="uname" required>
+            <label for="psw">Adgangskode</label>
+            <input id="psw" class="inputfields" type="password" placeholder="Adgangskode" name="psw" required>
 
-    <section class="login_box" >
-   
-        <input type="text" placeholder="Mobilnummer" name="uname" required>
-    
-        <input type="adgangskode" placeholder="Adgangskode" name="psw" required>
+            <p class="psw">Glemt <a href="#">adgangskode?</a></p>
 
-        <p class="psw">Glemt <a href="#">adgangskode?</a></p>
-    
-        <a href="http://127.0.0.1:5501/BRproject/start.html"><button type="submit">Login</button></a>
-
-
-    
-    </section>
-
+            <a href="start.html"><button type="submit">Login</button></a>
+        </section>
     </main>
 
+    <script>
+        if(document.body.clientWidth > 900){
+            alert("Vi beder om at sætte dit vindue i responsive design med en mindst brede på 320px og en maks brede på 900px!");
+        }
+    </script>
     
 </body>
 </html>
