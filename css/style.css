@@ -140,7 +140,7 @@
 
 .navigation__content{
     width: 300px;
-    height: calc(100vh - 90px);
+    height: calc(100vh - 204px);
     position: relative;
     top: 0;
     color: var(--blue);
@@ -158,20 +158,25 @@
     position: absolute;
     bottom: 0;
     width: 100%;
-    height: 100px;
+    height: auto;
     border-top-left-radius: 100%;
     border-top-right-radius: 100%;
     background: var(--blue);
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 15px;
 }
 
 .address-hours{
     font-family: Arial, Helvetica, sans-serif;
     font-style: normal;
     padding: 10px;
-    width: 50%;
+    width: 70%;
     margin: auto;
 }
 
+.small-txt{
+    font-size: 10px;
+}
 /* Indhold */
 .txt{
     width: 50%;
