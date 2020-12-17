@@ -26,6 +26,9 @@ body{
    
 }
 
+.content{
+    text-align: center;
+}
 
 .marker{
     background: url("logoBR-grey.png");
